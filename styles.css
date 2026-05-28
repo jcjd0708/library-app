@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+.library-card {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* modal */
+.modal {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: antiquewhite;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
